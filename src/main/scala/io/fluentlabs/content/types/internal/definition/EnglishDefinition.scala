@@ -3,7 +3,7 @@ package io.fluentlabs.content.types.internal.definition
 import io.fluentlabs.content.types.Language.Language
 import DefinitionSource.DefinitionSource
 import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
-import com.foreignlanguagereader.dto.v1.definition.DefinitionDTO
+import io.fluentlabs.dto.v1.definition.DefinitionDTO
 import io.fluentlabs.content.types.internal.word.PartOfSpeech
 
 import scala.collection.JavaConverters._

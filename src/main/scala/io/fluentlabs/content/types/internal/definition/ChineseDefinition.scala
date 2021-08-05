@@ -1,20 +1,13 @@
 package io.fluentlabs.content.types.internal.definition
 
-import com.foreignlanguagereader.content.enrichers.chinese.{
-  ChinesePronunciationGenerator,
-  SimplifiedTraditionalConverter
-}
 import io.fluentlabs.content.types.Language.Language
 import DefinitionSource.DefinitionSource
 import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
-import com.foreignlanguagereader.dto.v1.definition.{
+import io.fluentlabs.dto.v1.definition.{
   ChineseDefinitionDTO,
   DefinitionSourceDTO
 }
-import com.foreignlanguagereader.dto.v1.definition.chinese.{
-  ChinesePronunciation,
-  HSKLevel
-}
+import io.fluentlabs.dto.v1.definition.chinese.{ChinesePronunciation, HSKLevel}
 import com.github.houbb.opencc4j.util.ZhConverterUtil
 import io.fluentlabs.content.difficulty.chinese.hsk.HSKDifficultyFinder
 import io.fluentlabs.content.enrichers.chinese.{
@@ -23,6 +16,8 @@ import io.fluentlabs.content.enrichers.chinese.{
 }
 import io.fluentlabs.content.types.Language
 import io.fluentlabs.content.types.internal.word.PartOfSpeech
+import play.api.libs.functional.syntax.toFunctionalBuilderOps
+import play.api.libs.json.{Json, Reads, Writes, __}
 
 import scala.collection.JavaConverters._
 import scala.compat.java8.OptionConverters._

@@ -2,6 +2,7 @@ package io.fluentlabs.content.types.external.definition.webster.common
 
 import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
 import io.fluentlabs.content.types.internal.word.PartOfSpeech
+import play.api.libs.json.{Reads, Writes}
 
 object WebsterPartOfSpeech extends Enumeration {
   type WebsterPartOfSpeech = Value

@@ -6,7 +6,7 @@ import GrammaticalGender.GrammaticalGender
 import PartOfSpeech.PartOfSpeech
 import Word.{numberFormat, punctuation}
 import WordTense.WordTense
-import com.foreignlanguagereader.dto.v1.word.WordDTO
+import io.fluentlabs.dto.v1.word.WordDTO
 
 case class Word(
     language: Language,

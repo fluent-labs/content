@@ -24,6 +24,9 @@ lazy val root = (project in file("."))
     name := "content",
     settings,
     libraryDependencies ++= Seq(
+      cats,
+      ws,
+      playJson,
       opencc4j,
       scalaTest % Test
     )

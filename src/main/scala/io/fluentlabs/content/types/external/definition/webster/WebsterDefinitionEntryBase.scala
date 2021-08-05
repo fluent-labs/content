@@ -1,12 +1,6 @@
 package io.fluentlabs.content.types.external.definition.webster
 
 import io.fluentlabs.content.types.external.definition.webster.common.WebsterPartOfSpeech.WebsterPartOfSpeech
-import com.foreignlanguagereader.content.types.external.definition.webster.common.{
-  WebsterDefinition,
-  WebsterHeadwordInfo,
-  WebsterMeta,
-  WebsterPartOfSpeech
-}
 import io.fluentlabs.content.formatters.WebsterFormatter
 import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
 import io.fluentlabs.content.types.external.definition.webster.common.{

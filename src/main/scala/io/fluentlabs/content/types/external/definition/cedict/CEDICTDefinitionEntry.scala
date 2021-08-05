@@ -2,10 +2,6 @@ package io.fluentlabs.content.types.external.definition.cedict
 
 import io.fluentlabs.content.types.Language.Language
 import io.fluentlabs.content.types.internal.definition.DefinitionSource.DefinitionSource
-import com.foreignlanguagereader.content.types.internal.definition.{
-  ChineseDefinition,
-  DefinitionSource
-}
 import io.fluentlabs.content.types.Language
 import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
 import io.fluentlabs.content.types.external.definition.DefinitionEntry
@@ -14,6 +10,7 @@ import io.fluentlabs.content.types.internal.definition.{
   ChineseDefinition,
   DefinitionSource
 }
+import play.api.libs.json.{Format, Json, Reads}
 
 case class CEDICTDefinitionEntry(
     override val subdefinitions: List[String],

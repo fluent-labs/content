@@ -1,6 +1,6 @@
 package io.fluentlabs.content.difficulty.chinese.hsk
 
-import com.foreignlanguagereader.dto.v1.definition.chinese.HSKLevel
+import io.fluentlabs.dto.v1.definition.chinese.HSKLevel
 import play.api.libs.json.{Json, Reads}
 
 case class HskHolder(

@@ -1,6 +1,16 @@
 package io.fluentlabs.content.types.external.definition.webster.common
 
 import io.fluentlabs.content.util.JsonSequenceHelper
+import play.api.libs.functional.syntax.toFunctionalBuilderOps
+import play.api.libs.json.{
+  JsError,
+  JsPath,
+  JsSuccess,
+  JsValue,
+  Json,
+  Reads,
+  Writes
+}
 
 case class WebsterDefinition(
     senseSequence: Option[List[List[WebsterSense]]],

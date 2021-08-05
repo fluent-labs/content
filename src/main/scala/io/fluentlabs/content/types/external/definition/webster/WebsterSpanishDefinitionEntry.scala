@@ -2,11 +2,6 @@ package io.fluentlabs.content.types.external.definition.webster
 
 import io.fluentlabs.content.types.Language.Language
 import io.fluentlabs.content.types.external.definition.webster.common.WebsterPartOfSpeech.WebsterPartOfSpeech
-import com.foreignlanguagereader.content.types.external.definition.webster.common._
-import com.foreignlanguagereader.content.types.internal.definition.{
-  Definition,
-  DefinitionSource
-}
 import io.fluentlabs.content.types.Language
 import io.fluentlabs.content.types.external.definition.DefinitionEntry
 import io.fluentlabs.content.types.internal.definition.DefinitionSource.DefinitionSource
@@ -24,6 +19,8 @@ import io.fluentlabs.content.types.internal.definition.{
   DefinitionSource
 }
 import io.fluentlabs.content.util.JsonSequenceHelper
+import play.api.libs.functional.syntax.toFunctionalBuilderOps
+import play.api.libs.json.{JsPath, Json, Reads, Writes}
 
 case class WebsterSpanishDefinitionEntry(
     meta: WebsterMeta,

@@ -1,10 +1,6 @@
 package io.fluentlabs.content.types.external.definition.wiktionary
 
 import io.fluentlabs.content.types.Language.Language
-import com.foreignlanguagereader.content.types.internal.definition.{
-  Definition,
-  DefinitionSource
-}
 import io.fluentlabs.content.types.Language
 import io.fluentlabs.content.types.internal.definition.DefinitionSource.DefinitionSource
 import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
@@ -13,6 +9,7 @@ import io.fluentlabs.content.types.internal.definition.{
   Definition,
   DefinitionSource
 }
+import play.api.libs.json.{Format, Json, Reads}
 
 case class WiktionaryDefinitionEntry(
     override val subdefinitions: List[String],

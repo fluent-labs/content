@@ -1,11 +1,8 @@
 package io.fluentlabs.content.difficulty.chinese.hsk
 
 import io.fluentlabs.content.difficulty.CEFRDifficultyLevel.CEFRDifficultyLevel
-import com.foreignlanguagereader.content.difficulty.{
-  CEFRDifficultyLevel,
-  DifficultyFinder
-}
-import com.foreignlanguagereader.dto.v1.definition.chinese.HSKLevel
+import io.fluentlabs.content.difficulty.{CEFRDifficultyLevel, DifficultyFinder}
+import io.fluentlabs.dto.v1.definition.chinese.HSKLevel
 import io.fluentlabs.content.difficulty.{CEFRDifficultyLevel, DifficultyFinder}
 import io.fluentlabs.content.util.ContentFileLoader
 

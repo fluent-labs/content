@@ -1,7 +1,7 @@
 package io.fluentlabs.content.types.internal.word
 
 import cats.syntax.all._
-import com.foreignlanguagereader.dto.v1.word.PartOfSpeechDTO
+import io.fluentlabs.dto.v1.word.PartOfSpeechDTO
 import play.api.libs.json.{Reads, Writes}
 
 /** This is a crude bucketing of all possible parts of speech in a language.

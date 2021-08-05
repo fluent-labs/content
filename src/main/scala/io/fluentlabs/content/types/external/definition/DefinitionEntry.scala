@@ -2,7 +2,6 @@ package io.fluentlabs.content.types.external.definition
 
 import io.fluentlabs.content.types.Language.Language
 import io.fluentlabs.content.types.internal.definition.DefinitionSource.DefinitionSource
-import com.foreignlanguagereader.content.types.internal.definition._
 import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
 import io.fluentlabs.content.types.external.definition.cedict.CEDICTDefinitionEntry
 import io.fluentlabs.content.types.external.definition.wiktionary.WiktionaryDefinitionEntry
@@ -13,6 +12,15 @@ import io.fluentlabs.content.types.internal.definition.{
   DefinitionSource,
   EnglishDefinition,
   SpanishDefinition
+}
+import play.api.libs.json.{
+  Format,
+  JsDefined,
+  JsError,
+  JsResult,
+  JsString,
+  JsValue,
+  Reads
 }
 
 trait DefinitionEntry {

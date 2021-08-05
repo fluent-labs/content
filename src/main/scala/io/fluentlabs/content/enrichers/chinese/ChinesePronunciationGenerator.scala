@@ -1,6 +1,6 @@
 package io.fluentlabs.content.enrichers.chinese
 
-import com.foreignlanguagereader.dto.v1.definition.chinese.ChinesePronunciation
+import io.fluentlabs.dto.v1.definition.chinese.ChinesePronunciation
 import io.fluentlabs.content.util.ContentFileLoader
 
 object ChinesePronunciationGenerator {

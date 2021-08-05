@@ -1,10 +1,6 @@
 package io.fluentlabs.content.types.external.definition.wiktionary
 
 import io.fluentlabs.content.types.Language.Language
-import com.foreignlanguagereader.content.types.internal.definition.{
-  Definition,
-  DefinitionSource
-}
 import io.fluentlabs.content.types.Language
 import io.fluentlabs.content.types.external.definition.DefinitionEntry
 import io.fluentlabs.content.types.internal.definition.{
