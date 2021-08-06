@@ -2,6 +2,7 @@ package io.fluentlabs.content.enrichers.chinese
 
 import io.fluentlabs.dto.v1.definition.chinese.ChinesePronunciation
 import io.fluentlabs.content.util.ContentFileLoader
+import play.api.libs.json.{Json, Reads}
 
 object ChinesePronunciationGenerator {
   val toneRegex = "[12345]+"

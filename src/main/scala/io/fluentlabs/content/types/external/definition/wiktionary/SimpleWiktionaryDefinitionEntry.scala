@@ -9,6 +9,7 @@ import io.fluentlabs.content.types.internal.definition.{
 }
 import io.fluentlabs.content.types.internal.definition.DefinitionSource.DefinitionSource
 import io.fluentlabs.content.types.internal.word.PartOfSpeech
+import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
 
 case class SimpleWiktionaryDefinitionEntry(
     // Required fields
