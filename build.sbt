@@ -16,7 +16,9 @@ lazy val settings = Seq(
   publishConfiguration := publishConfiguration.value.withOverwrite(true),
   publishLocalConfiguration := publishLocalConfiguration.value.withOverwrite(
     true
-  )
+  ),
+  githubOwner := "fluent-labs",
+  githubRepository := "content"
 )
 
 lazy val root = (project in file("."))
@@ -24,6 +26,7 @@ lazy val root = (project in file("."))
     name := "content",
     settings,
     libraryDependencies ++= Seq(
+      dto,
       cats,
       ws,
       playJson,
