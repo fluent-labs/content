@@ -6,6 +6,7 @@ import io.fluentlabs.content.types.internal.definition.DefinitionSource
 import io.fluentlabs.content.types.internal.word.PartOfSpeech
 import io.fluentlabs.content.util.ContentFileLoader
 import org.scalatest.funspec.AnyFunSpec
+import play.api.libs.json.{JsValue, Json}
 
 class WebsterSpanishDefinitionEntryTest extends AnyFunSpec {
   describe("A spanish definition entry") {

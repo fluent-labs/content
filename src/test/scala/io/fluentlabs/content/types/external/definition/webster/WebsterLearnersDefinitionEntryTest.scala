@@ -1,9 +1,5 @@
 package io.fluentlabs.content.types.external.definition.webster
 
-import com.foreignlanguagereader.content.types.internal.definition.{
-  DefinitionSource,
-  EnglishDefinition
-}
 import io.fluentlabs.content.types.Language
 import io.fluentlabs.content.types.internal.definition.{
   DefinitionSource,
@@ -12,6 +8,7 @@ import io.fluentlabs.content.types.internal.definition.{
 import io.fluentlabs.content.types.internal.word.PartOfSpeech
 import io.fluentlabs.content.util.ContentFileLoader
 import org.scalatest.funspec.AnyFunSpec
+import play.api.libs.json.{JsValue, Json}
 
 class WebsterLearnersDefinitionEntryTest extends AnyFunSpec {
   describe("A learners definition entry") {

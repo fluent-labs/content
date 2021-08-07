@@ -1,9 +1,10 @@
 package io.fluentlabs.content.types.internal.definition
 
-import com.foreignlanguagereader.dto.v1.definition.chinese.HSKLevel
 import io.fluentlabs.content.types.Language
 import io.fluentlabs.content.types.internal.word.PartOfSpeech
+import io.fluentlabs.dto.v1.definition.chinese.HSKLevel
 import org.scalatest.funspec.AnyFunSpec
+import play.api.libs.json.Json
 
 import scala.collection.JavaConverters._
 import scala.compat.java8.OptionConverters._
