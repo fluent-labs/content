@@ -17,6 +17,7 @@ lazy val settings = Seq(
   publishLocalConfiguration := publishLocalConfiguration.value.withOverwrite(
     true
   ),
+  organization := "io.fluentlabs",
   githubOwner := "fluent-labs",
   githubRepository := "content"
 )
