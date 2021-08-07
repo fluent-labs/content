@@ -1,11 +1,11 @@
 package io.fluentlabs.content.formatters
 
-import play.api.Logger
+import org.slf4j.{Logger, LoggerFactory}
 
 import scala.collection.immutable.ListMap
 
 object WebsterFormatter extends Formatter {
-  val logger: Logger = Logger(this.getClass)
+  val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
   // TODO
   // {d_link|dugong|dugong}

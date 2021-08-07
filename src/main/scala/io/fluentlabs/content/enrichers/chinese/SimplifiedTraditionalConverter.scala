@@ -1,14 +1,14 @@
 package io.fluentlabs.content.enrichers.chinese
 
 import com.github.houbb.opencc4j.util.ZhConverterUtil
-import play.api.Logger
+import org.slf4j.{Logger, LoggerFactory}
 
 import scala.collection.JavaConverters._
 import scala.util.matching.Regex
 import scala.util.{Failure, Success, Try}
 
 object SimplifiedTraditionalConverter {
-  val logger: Logger = Logger(this.getClass)
+  val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
   val simplifiedRegex: Regex = """\[(.+)\]""".r
   def toSimplified(traditional: String): Option[String] = {
