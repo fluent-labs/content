@@ -1,0 +1,52 @@
+name: Build and Publish
+
+on:
+  pull_request:
+    types: [ closed ]
+    branches: [ main ]
+
+jobs:
+  publish:
+    name: Publish packages
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2.3.4
+
+      - name: Set up JDK 15
+        uses: actions/setup-java@v2.1.0
+        with:
+          java-version: 15.0.1
+          distribution: 'zulu'
+
+      - name: Configure git
+        run: |
+          git config --local user.email "release@foreignlanguagereader.com"
+          git config --local user.name "Release"
+
+      - name: Wait for previous deployments to complete
+        uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to github packages
+        run: sbt "release with-defaults"
+
+      - name: Get release tag
+        id: version
+        uses: WyriHaximus/github-action-get-previous-tag@v1.1
+
+      # This is different than the release tag. A tag has v, like v1.1.0, but a version does not, like 1.1.0
+      - name: Get release version
+        run: echo "RELEASE_VERSION=$(echo "${{ steps.version.outputs.tag }}" | grep -Eo "[0-9\.]+")" >> $GITHUB_ENV
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1.1.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          release_name: "${{ env.RELEASE_VERSION }}: ${{ github.event.pull_request.title }}"
+          body: ${{ github.event.pull_request.body }}
