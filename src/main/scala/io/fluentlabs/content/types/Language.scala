@@ -2,7 +2,6 @@ package io.fluentlabs.content.types
 
 import cats.syntax.all._
 import play.api.libs.json.{Reads, Writes}
-import play.api.mvc.PathBindable
 
 object Language extends Enumeration {
   type Language = Value
@@ -17,15 +16,4 @@ object Language extends Enumeration {
 
   implicit val reads: Reads[Language] = Reads.enumNameReads(Language)
   implicit val writes: Writes[Language] = Writes.enumNameWrites
-
-  implicit def pathBinder: PathBindable[Language] =
-    new PathBindable[Language] {
-      override def bind(key: String, value: String): Either[String, Language] =
-        fromString(value) match {
-          case Some(language) =>
-            Right(language)
-          case _ => Left(value)
-        }
-      override def unbind(key: String, value: Language): String = value.toString
-    }
 }

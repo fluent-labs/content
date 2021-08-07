@@ -1,6 +1,6 @@
 package io.fluentlabs.content.util
 
-import play.api.Logger
+import org.slf4j.{Logger, LoggerFactory}
 import play.api.libs.json.{JsError, JsSuccess, Json, Reads}
 
 import java.io.{BufferedReader, InputStreamReader}
@@ -8,7 +8,7 @@ import java.util.stream.Collectors
 import scala.util.{Failure, Success, Try}
 
 object ContentFileLoader {
-  val logger: Logger = Logger(this.getClass)
+  val logger: Logger = LoggerFactory.getLogger(this.getClass)
 
   def loadResourceFile(path: String): String = {
     Try {

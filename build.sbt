@@ -31,6 +31,8 @@ lazy val root = (project in file("."))
       ws,
       playJson,
       opencc4j,
+      slf4jApi,
+      slf4jSimple,
       scalaTest % Test
     )
   )
@@ -49,7 +51,7 @@ lazy val compilerOptions = Seq(
 //  "-Wvalue-discard",
 
 // Code coverage settings
-//coverageMinimum := 70
-//coverageFailOnMinimum := false
+coverageMinimumStmtTotal := 70
+coverageFailOnMinimum := false
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
