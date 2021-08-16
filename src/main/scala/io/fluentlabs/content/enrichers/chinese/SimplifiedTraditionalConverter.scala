@@ -60,9 +60,8 @@ object SimplifiedTraditionalConverter {
             case (_, None) => true
             case _         => false
           }
-          .map {
-            case (char, _) =>
-              char
+          .map { case (char, _) =>
+            char
           }
         logger.error(
           s"Failed to convert $simplified to traditional because these characters failed conversion: ${errors
