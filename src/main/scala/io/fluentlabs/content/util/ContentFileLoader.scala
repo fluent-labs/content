@@ -32,11 +32,17 @@ object ContentFileLoader {
 
   /** Loads a json file from the path, or fails trying.
     *
-    * Use this if you want to stop the server from coming up if you can't load this file
+    * Use this if you want to stop the server from coming up if you can't load
+    * this file
     *
-    * @param path The location on the classpath of the file. Eg: "/resources/definition/chinese/pronunciation.json"
-    * @param rds You don't need to pass this, just make sure your case class has a Reads[T] implicit on it.
-    * @tparam T A case class this should be read to.
+    * @param path
+    *   The location on the classpath of the file. Eg:
+    *   "/resources/definition/chinese/pronunciation.json"
+    * @param rds
+    *   You don't need to pass this, just make sure your case class has a
+    *   Reads[T] implicit on it.
+    * @tparam T
+    *   A case class this should be read to.
     * @return
     */
   def loadJsonResourceFile[T](path: String)(implicit rds: Reads[T]): T = {

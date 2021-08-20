@@ -37,7 +37,7 @@ case class WebsterPronunciationSound(
     case bix if bix.startsWith("bix")                      => "bix"
     case gg if gg.startsWith("gg")                         => "gg"
     case number if number.matches("^[0-9\\.?!_\\-,;:]+.*") => "number"
-    case _                                                 => audio.charAt(0).toString
+    case _ => audio.charAt(0).toString
   }
 
   // TODO maybe look at automatically setting this
