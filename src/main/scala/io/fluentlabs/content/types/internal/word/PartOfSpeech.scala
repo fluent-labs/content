@@ -6,14 +6,14 @@ import play.api.libs.json.{Reads, Writes}
 
 /** This is a crude bucketing of all possible parts of speech in a language.
   *
-  * All models are going to have a different set of parts of speech,
-  * but we need a common set to work with.
+  * All models are going to have a different set of parts of speech, but we need
+  * a common set to work with.
   *
   * These are meant to be very general since our audience is language learners
   * who will be confused by too much detail.
   *
-  * Exceptions can be made for things that are fundamental to one of our supported languages.
-  * (Chinese measure words come to mind)
+  * Exceptions can be made for things that are fundamental to one of our
+  * supported languages. (Chinese measure words come to mind)
   */
 object PartOfSpeech extends Enumeration {
   type PartOfSpeech = Value

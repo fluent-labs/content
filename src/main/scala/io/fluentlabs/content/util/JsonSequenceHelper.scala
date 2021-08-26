@@ -2,13 +2,16 @@ package io.fluentlabs.content.util
 
 import play.api.libs.json.{JsValue, Reads, Writes}
 
-/** This helper class exists to get rid of all the boilerplate with nested json parsers
-  * The macros don't handle nested types without being told that they can.
-  * So this tells them that they can
+/** This helper class exists to get rid of all the boilerplate with nested json
+  * parsers The macros don't handle nested types without being told that they
+  * can. So this tells them that they can
   *
-  * @param reads An implementation of json reading. Just needs to be in scope.
-  * @param writes An implementation of json writing. Just needs to be in scope.
-  * @tparam T The type we are helping with.
+  * @param reads
+  *   An implementation of json reading. Just needs to be in scope.
+  * @param writes
+  *   An implementation of json writing. Just needs to be in scope.
+  * @tparam T
+  *   The type we are helping with.
   */
 class JsonSequenceHelper[T](
     implicit val reads: Reads[T],

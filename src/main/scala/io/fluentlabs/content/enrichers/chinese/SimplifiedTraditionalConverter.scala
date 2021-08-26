@@ -25,20 +25,23 @@ object SimplifiedTraditionalConverter {
     }
   }
 
-  /** Character simplification collapsed many characters into one.
-    * Given this, one simplified character can have one or more traditional counterparts.
+  /** Character simplification collapsed many characters into one. Given this,
+    * one simplified character can have one or more traditional counterparts.
     * eg: 干 => [幹, 乾]
     *
-    * We're making an opinionated choice to look at all possible combinations because:
-    * - In practice the number should be very small.
-    *   Most characters will only have one option, and those that do normally have only two
-    * - We keep track of failed lookups and don't search them again.
-    *   This means that we quickly solve which mapping is right and bound the time which we do unnecessary work
+    * We're making an opinionated choice to look at all possible combinations
+    * because:
+    *   - In practice the number should be very small. Most characters will only
+    *     have one option, and those that do normally have only two
+    *   - We keep track of failed lookups and don't search them again. This
+    *     means that we quickly solve which mapping is right and bound the time
+    *     which we do unnecessary work
     *
-    *   Why use this instead of the library method?
+    * Why use this instead of the library method?
     *
-    *   TODO TEST ME I AM VERY IMPORTANT
-    * @param simplified The simplified character
+    * TODO TEST ME I AM VERY IMPORTANT
+    * @param simplified
+    *   The simplified character
     * @return
     */
   def toTraditional(simplified: String): Option[List[String]] = {

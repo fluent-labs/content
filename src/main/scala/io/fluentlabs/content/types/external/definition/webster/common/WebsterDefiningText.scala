@@ -20,8 +20,8 @@ case class WebsterDefiningText(
 )
 object WebsterDefiningText {
 
-  /** This class uses a data type of a series of nested arrays
-    * See NestedArrayHelper for details
+  /** This class uses a data type of a series of nested arrays See
+    * NestedArrayHelper for details
     */
   implicit val reads: Reads[WebsterDefiningText] = JsPath
     .read[List[List[JsValue]]](JsonSequenceHelper.jsValueHelper.readsListList)
