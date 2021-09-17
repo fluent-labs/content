@@ -1,7 +1,7 @@
 import Dependencies._
 import sbt._
 
-ThisBuild / scalaVersion := "2.12.12"
+ThisBuild / scalaVersion := "2.12.15"
 ThisBuild / organization := "io.fluentlabs"
 ThisBuild / organizationName := "FluentLabs"
 
