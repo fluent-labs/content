@@ -45,7 +45,7 @@ trait WebsterDefinitionEntryBase {
   }
 
   val examples: Option[List[String]] = {
-    //definitions: Seq[WebsterDefinition]
+    // definitions: Seq[WebsterDefinition]
     val e = WebsterFormatter.formatSeq(
       definitions
         // senseSequence: Option[Seq[Seq[WebsterSense]]]
