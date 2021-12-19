@@ -47,9 +47,6 @@ lazy val compilerOptions = Seq(
   "-Wdead-code",
   "-Wvalue-discard"
 )
-// Add these back in when we can get to scala 2.13
-//  "-Wdead-code",
-//  "-Wvalue-discard",
 
 // Code coverage settings
 coverageMinimumStmtTotal := 70
