@@ -6,7 +6,7 @@ import io.fluentlabs.dto.v1.definition.chinese.HSKLevel
 import org.scalatest.funspec.AnyFunSpec
 import play.api.libs.json.Json
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.compat.java8.OptionConverters._
 
 class ChineseDefinitionTest extends AnyFunSpec {
