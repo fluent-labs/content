@@ -6,7 +6,7 @@ import io.fluentlabs.content.types.internal.word.PartOfSpeech.PartOfSpeech
 import io.fluentlabs.dto.v1.definition.DefinitionDTO
 import io.fluentlabs.content.types.internal.word.PartOfSpeech
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 
 case class EnglishDefinition(
     subdefinitions: List[String],

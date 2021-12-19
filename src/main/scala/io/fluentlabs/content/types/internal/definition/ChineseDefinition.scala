@@ -19,7 +19,7 @@ import io.fluentlabs.content.types.internal.word.PartOfSpeech
 import play.api.libs.functional.syntax.toFunctionalBuilderOps
 import play.api.libs.json.{Json, Reads, Writes, __}
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.compat.java8.OptionConverters._
 
 case class ChineseDefinition(

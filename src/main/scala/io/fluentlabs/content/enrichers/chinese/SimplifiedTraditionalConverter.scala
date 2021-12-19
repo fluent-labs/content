@@ -3,7 +3,7 @@ package io.fluentlabs.content.enrichers.chinese
 import com.github.houbb.opencc4j.util.ZhConverterUtil
 import org.slf4j.{Logger, LoggerFactory}
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.util.matching.Regex
 import scala.util.{Failure, Success, Try}
 

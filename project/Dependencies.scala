@@ -3,7 +3,7 @@ import sbt._
 object Dependencies {
   val playWsStandaloneVersion: String = "2.1.3"
 
-  lazy val dto = "io.fluentlabs" % "dto" % "1.0.3"
+  lazy val dto = "io.fluentlabs" % "dto" % "1.0.4"
 
   lazy val opencc4j = "com.github.houbb" % "opencc4j" % "1.7.1"
   lazy val cats = "org.typelevel" %% "cats-core" % "2.6.1"
