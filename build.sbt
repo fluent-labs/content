@@ -1,7 +1,7 @@
 import Dependencies._
 import sbt._
 
-ThisBuild / scalaVersion := "2.12.12"
+ThisBuild / scalaVersion := "2.13.7"
 ThisBuild / organization := "io.fluentlabs"
 ThisBuild / organizationName := "FluentLabs"
 
@@ -44,7 +44,8 @@ lazy val compilerOptions = Seq(
   "-feature",
   "-unchecked",
   "-Xfatal-warnings",
-  "-Ypartial-unification" // Remove me in scala 2.13
+  "-Wdead-code",
+  "-Wvalue-discard"
 )
 // Add these back in when we can get to scala 2.13
 //  "-Wdead-code",
