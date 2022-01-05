@@ -1,7 +1,7 @@
 import sbt._
 
 object Dependencies {
-  val playWsStandaloneVersion: String = "2.1.3"
+  val playWsStandaloneVersion: String = "2.1.7"
 
   lazy val dto = "io.fluentlabs" % "dto" % "1.0.5"
 
