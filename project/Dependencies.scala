@@ -12,6 +12,6 @@ object Dependencies {
   lazy val playJson = "com.typesafe.play" %% "play-json" % "2.9.2"
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.2.10"
 
-  lazy val slf4jApi = "org.slf4j" % "slf4j-api" % "1.7.32"
-  lazy val slf4jSimple = "org.slf4j" % "slf4j-simple" % "1.7.32"
+  lazy val slf4jApi = "org.slf4j" % "slf4j-api" % "1.7.33"
+  lazy val slf4jSimple = "org.slf4j" % "slf4j-simple" % "1.7.33"
 }
