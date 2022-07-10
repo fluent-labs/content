@@ -6,7 +6,7 @@ object Dependencies {
   lazy val dto = "io.fluentlabs" % "dto" % "1.0.5"
 
   lazy val opencc4j = "com.github.houbb" % "opencc4j" % "1.7.2"
-  lazy val cats = "org.typelevel" %% "cats-core" % "2.7.0"
+  lazy val cats = "org.typelevel" %% "cats-core" % "2.8.0"
   lazy val ws =
     "com.typesafe.play" %% "play-ahc-ws-standalone" % playWsStandaloneVersion
   lazy val playJson = "com.typesafe.play" %% "play-json" % "2.9.2"
