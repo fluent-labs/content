@@ -9,7 +9,7 @@ object Dependencies {
   lazy val cats = "org.typelevel" %% "cats-core" % "2.8.0"
   lazy val ws =
     "com.typesafe.play" %% "play-ahc-ws-standalone" % playWsStandaloneVersion
-  lazy val playJson = "com.typesafe.play" %% "play-json" % "2.9.2"
+  lazy val playJson = "com.typesafe.play" %% "play-json" % "2.9.3"
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.2.12"
 
   lazy val slf4jApi = "org.slf4j" % "slf4j-api" % "1.7.36"
